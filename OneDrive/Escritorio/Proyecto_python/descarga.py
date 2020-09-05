@@ -8,7 +8,6 @@ with open(filename, mode='r') as csv_file:
 for row in Data:
     print(row) """
 
-
 import csv
 import urllib.request
 from io import StringIO
@@ -19,4 +18,5 @@ f = StringIO(bytearray(respuesta.read()).decode())
 archivo = csv.reader(f)
 for filas in archivo:
     print(filas)
+
 
